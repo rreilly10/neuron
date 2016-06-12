@@ -1,4 +1,5 @@
 import random
+import math
 
 def make_matrix(N, M):
     """
@@ -13,4 +14,7 @@ def between(min, max):
     the given parameters
     """
 
-    return random.random * (max - min) + min
+    return random.random() * (max - min) + min
+
+def sigmoid(x):
+    return 1.0 / (1 + math.exp(-x))
