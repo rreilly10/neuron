@@ -18,3 +18,7 @@ def between(min, max):
 
 def sigmoid(x):
     return 1.0 / (1 + math.exp(-x))
+
+def deriv_sigmoid(x):
+    sgmd = sigmoid(x)
+    return (1 - sgmd) * sgmd
